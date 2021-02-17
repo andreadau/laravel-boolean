@@ -30,7 +30,6 @@ class PageController extends Controller
     public function blog(Post $post)
     {
         $posts = $post->all();
-        var_dump($posts);
-        return view('blog', compact($posts));
+        return view('blog', compact("posts"));
     }
 }

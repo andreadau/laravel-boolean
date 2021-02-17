@@ -7,9 +7,11 @@
     <title>Document</title>
 </head>
 <body>
-    @foreach($posts ad $post)
-    <h2>{{$post->title}}</h2>
-    <p>{{$post->description}}</p>
-    @endforeach
+    <main>
+        @foreach($posts as $post)
+        <h2>{{$post->title}}</h2>
+        <p>{{$post->description}}</p>
+        @endforeach
+    </main>
 </body>
 </html>
